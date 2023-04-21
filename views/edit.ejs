@@ -64,10 +64,9 @@
       <div class="mb-3">
         <label for="rol" class="form-label">Rol:</label>
         <select class="form-select" id="rol" name="rol">
-          <option value="admin" <%= user.rol=='admin' ? "selected" : '' %> > Administrador</option>
-          <option value="data-entry" <%= user.rol=='data-entry' ? "selected" : '' %> > Data entry</option>
+          <option value="admin" <%=user.rol=='admin' ? "selected" : '' %> > Administrador</option>
+          <option value="data-entry" <%=user.rol=='data-entry' ? "selected" : '' %> > Data entry</option>
         </select>
-
       </div>
       <button type="submit" class="btn btn-primary">Editar</button>
       <a href="/" class="btn btn-secondary">Cancelar</a>
